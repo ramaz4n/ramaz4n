@@ -1,0 +1,68 @@
+.header{
+	font-family: 'Teko', sans-serif;
+	border-bottom: 1px solid rgb(107, 106, 106);
+	color: white;
+	
+	&__wrapper{
+		height: 80px;
+		width: 100%;
+      display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo{
+      color: rgb(170, 14, 14);
+		font-size: 40px;
+	}
+	&__resume{
+		img{
+			margin-bottom: -3px;
+			width: 30px;
+			height: 26px;
+		}
+		color:rgb(170, 14, 14);
+		font-size: 27px;
+	}
+	&__git{
+		display: flex;
+		align-items: center;
+		span{
+			color: white;
+		   margin-top:	 4px;
+			margin-left: 5px;
+			font-size: 25px;
+		}
+		img{
+			width: 35px;
+			height: 35px;
+		}
+	}
+
+}
+
+
+
+@media(max-width: 800px){
+	.header__logo{
+		font-size: 34px;
+	}
+
+}
+
+
+@media(max-width: 500px){
+	.header__logo{
+		font-size: 24px;
+	}
+	.header__git{
+		span{
+			display: none;
+		}
+	}
+	.header__resume{
+		span{
+			display: none;
+		}
+	}
+}

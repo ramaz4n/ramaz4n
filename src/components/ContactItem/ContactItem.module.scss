@@ -1,0 +1,33 @@
+.link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 25px;
+	width: 400px;
+	transition: all 0.3s ease-in-out;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: rgb(170, 14, 14);
+	color: #ffffff;
+	box-shadow: 0 0 7px rgb(170, 14, 14);
+	&:hover{
+		transform: scale(1.05);
+	}
+}
+.img{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+}
+
+
+@media(max-width: 500px){
+	.link{
+		padding: 7px 10px;
+		width: 250px;
+		font-size: 16px;
+	}
+
+}
