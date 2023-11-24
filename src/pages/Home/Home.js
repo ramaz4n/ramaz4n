@@ -1,4 +1,4 @@
-import React from 'react';git 
+import React from 'react';
 import {Link} from "react-router-dom";
 
 import styles from './Home.module.scss'
