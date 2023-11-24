@@ -1,6 +1,9 @@
-import React from 'react';
+import React from 'react';git 
 import {Link} from "react-router-dom";
+
 import styles from './Home.module.scss'
+
+
 import {ReactComponent as HomeImg} from '../../Images/home.svg'
 import {ReactComponent as Hand} from '../../Images/hand.svg'
 import {ReactComponent as Tel} from '../../Images/tel.svg'

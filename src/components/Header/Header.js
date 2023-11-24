@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import Container from '../Container/Container'
 import github from '../../Images/github.webp'
 import resume from '../../Images/resume.png'
+import logoImg from '../../Images/ramazan.svg'
 
 import styles from './Header.module.scss';			
 
@@ -13,7 +14,9 @@ function Header(props) {
 		<div className={styles.header}>
 		   <Container>
 			   <div className={styles.header__wrapper}>											
-			      <Link  className={styles.header__logo} to="/">Ramazan</Link>
+			      <Link to="/">
+					  <img className={styles.header__logo} src={logoImg} alt="logo"/>
+				  </Link>
 				   <a href="https://github.com/ramaz4n" className={styles.header__git} target="_blank">
 					   <img src={github}/> <span>Github</span>
 				   </a>
