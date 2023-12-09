@@ -14,12 +14,21 @@ import game from '../../Images/game.jpg'
 import warehouse from '../../Images/warehouse.jpg'
 import askin from '../../Images/askin.jpg'
 import papa from '../../Images/papa.jpg'
+import hook from '../../Images/hook.png'
 
 
 
 function Works(props) {
 
 	let worksItem = [
+		{
+			id: 8,
+			title: 'React-hook-form',
+			info: 'Инпуты, Формы, drag&drop и JSON',
+			url: hook,
+			link: "https://hook-form-nine.vercel.app/",
+			tech: "ts, react js"
+		},
 		{
 			id: 7,
 			title: 'Папа Лаваш',
