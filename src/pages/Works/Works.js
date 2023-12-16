@@ -15,12 +15,21 @@ import warehouse from '../../Images/warehouse.jpg'
 import askin from '../../Images/askin.jpg'
 import papa from '../../Images/papa.jpg'
 import hook from '../../Images/hook.png'
+import energy from '../../Images/energy.png'
 
 
 
 function Works(props) {
 
 	let worksItem = [
+		{
+			id: 9,
+			title: 'Energy',
+			info: 'Отправь TRON и мы делегируем энергию на транзакцию',
+			url: energy,
+			link: "https://energy-psi.vercel.app/",
+			tech: "next js"
+		},
 		{
 			id: 8,
 			title: 'React-hook-form',
