@@ -35,7 +35,7 @@ function Works(props) {
 			title: 'React-hook-form',
 			info: 'Инпуты, Формы, drag&drop и JSON',
 			url: hook,
-			link: "https://hook-form-nine.vercel.app/",
+			link: "https://hook-form-theta.vercel.app/",
 			tech: "ts, react js"
 		},
 		{
