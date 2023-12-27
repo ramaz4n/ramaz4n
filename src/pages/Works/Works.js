@@ -27,7 +27,7 @@ function Works(props) {
 			title: 'Energy',
 			info: 'Отправь TRON и мы делегируем энергию на транзакцию',
 			url: energy,
-			link: "https://energy-psi.vercel.app/",
+			link: "https://energysun.online",
 			tech: "next js"
 		},
 		{
