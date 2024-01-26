@@ -10,7 +10,22 @@ html{
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body{
+	min-height: 100vh;
 	background: #07060e;
+
+}
+body::-webkit-scrollbar {
+	width: 6px;
+	border-radius: 20px;
+	border: 3px solid #AA0E0E;
+}
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #AA0E0E;
+}
+body::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #07060e;
 }
 li{
 	list-style: none;

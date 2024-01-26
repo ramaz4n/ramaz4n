@@ -1,10 +1,6 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import styles from './Works.module.scss'
 
-import {ReactComponent as HomeImg} from '../../Images/home.svg'
-import {ReactComponent as Hand} from '../../Images/hand.svg'
-import {ReactComponent as Tel} from '../../Images/tel.svg'
 
 import WorksItem from '../../components/WorksItem/WorksItem'
 import jk from '../../Images/jk.jpg'
@@ -98,22 +94,6 @@ function Works(props) {
 	]
 	return (
 		<div className={styles.works}>
-
-			<ul className={styles.menu}>
-			   <li><Link className={styles.menu__item } to="/">
-				   <HomeImg className={styles.menu__icon }/>
-				   Home
-				</Link></li>
-				<li><Link className={styles.menu__item + ' ' + styles.active } to="/projects">
-				   <Hand className={styles.menu__icon + ' ' + styles.activeIcon}/>
-				   Projects
-				</Link></li>
-				<li><Link className={styles.menu__item } to="/contact">
-				   <Tel className={styles.menu__icon}/>
-				   Contacts
-				</Link></li>
-			</ul>
-
 			<div className={styles.works__content}>
 				{
 					worksItem.map(item=>(

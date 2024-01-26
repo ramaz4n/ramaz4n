@@ -19,6 +19,7 @@
 		background-color: transparent;
 		display: flex;
 		justify-content: center;
+		align-content: flex-start;
 		column-gap: 70px;
 		row-gap: 60px;
 		flex-wrap: wrap;
@@ -27,82 +28,3 @@
 }
 
 
-.menu{
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	gap: 20px;
-	padding: 25px 0;
-
-	&__icon{
-		width: 20px;
-		height: 20px;
-	}
-	&__icon * {
-		transition: all 0.2s ease-out;
-		color: #fff;
-		fill: #fff;
-	}
-	&__item{
-		display: flex;
-		align-items: center;
-		column-gap: 8px;
-		font-size: 20px;
-		font-weight: bold;
-		color: white;
-		transition: all 0.2s ease-out;
-		text-transform: lowercase;
-		padding: 5px 15px 7px;
-		border-radius: 15px;
-	
-		&:hover{
-			color: rgb(170, 14, 14);
-			box-shadow: 0 0 7px rgb(170, 14, 14);
-			.menu__icon * {
-				color: rgb(170, 14, 14);
-				fill: rgb(170, 14, 14);
-			}
-		}
-		&:focus{
-			color: rgb(170, 14, 14);
-			box-shadow: 0 0 7px rgb(170, 14, 14);
-		}
-		
-	}
-	
-}
-
-
-.active{
-	box-shadow: 0 0 7px rgb(170, 14, 14);
-	color: rgb(170, 14, 14);
-}
-.activeIcon *{
-	transition: all 0.2s ease-out;
-	color: rgb(170, 14, 14);
-	fill: rgb(170, 14, 14);
-}
-
-@media(max-width: 500px){
-
-
-
-
-	
-	.menu{
-		gap: 8px;
-		padding: 25px 0;
-		justify-content: center;
-		
-		&__item{
-			column-gap: 5px;
-			font-size: 16px;
-			padding: 4px 10px 6px;
-			
-		}
-		img{
-			width: 20px;
-			height: 20px;
-		}
-	}
-}
