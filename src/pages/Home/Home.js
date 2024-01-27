@@ -12,7 +12,7 @@ function Home(props) {
 				<h1 className={styles.home__title}>Ramazan Abdullaev &#8779; frontend developer</h1>
 				<div className={styles.home__about}>
 					<div className={styles.home__aboutItem}>
-					   <p>Фронтенд разработчик</p>
+					   <p className={styles.home__aboutItemTitle}>Фронтенд разработчик</p>
 						<p>Фронтенд разработчик - это специалист, который занимается созданием и поддержкой пользовательского интерфейса веб-приложений. Он отвечает за реализацию дизайн-концепций и взаимодействие пользователя с веб-страницей.</p>
 					   <p>
 					      Подробнее про мой стек технологий можно узнать в 
@@ -20,7 +20,7 @@ function Home(props) {
 					   </p>	
 					</div>
 				   <div className={styles.home__aboutItem}>
-					   <p>Frontend developer</p>
+					   <p className={styles.home__aboutItemTitle}>Frontend developer</p>
 						<p>A frontend developer is a specialist who creates and maintains the user interface of web applications. He is responsible for the implementation of design concepts and user interaction with the web page.</p>
 					   <p>
 					      Learn more about the technology stack in
