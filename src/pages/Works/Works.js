@@ -12,12 +12,22 @@ import askin from '../../Images/askin.jpg'
 import papa from '../../Images/papa.jpg'
 import hook from '../../Images/hook.png'
 import energy from '../../Images/energy.png'
+import progresses from '../../Images/progresses.png'
+
 
 
 
 function Works(props) {
 
 	let worksItem = [
+		{
+			id: 10,
+			title: 'Progresses',
+			info: 'Линейные и круговые прогресс бары',
+			url: progresses,
+			link: "https://progresses.vercel.app/",
+			tech: "html, css, js"
+		},
 		{
 			id: 9,
 			title: 'Energy',
