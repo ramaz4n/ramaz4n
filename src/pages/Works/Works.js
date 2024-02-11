@@ -21,14 +21,6 @@ function Works(props) {
 
 	let worksItem = [
 		{
-			id: 10,
-			title: 'Progresses',
-			info: 'Линейные и круговые прогресс бары',
-			url: progresses,
-			link: "https://progresses.vercel.app/",
-			tech: "html, css, js"
-		},
-		{
 			id: 9,
 			title: 'Energy',
 			info: 'Отправь TRON и мы делегируем энергию на транзакцию',
