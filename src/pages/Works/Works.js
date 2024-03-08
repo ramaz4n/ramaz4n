@@ -12,7 +12,7 @@ import askin from '../../Images/askin.jpg'
 import papa from '../../Images/papa.jpg'
 import hook from '../../Images/hook.png'
 import energy from '../../Images/energy.png'
-import progresses from '../../Images/progresses.png'
+
 
 
 

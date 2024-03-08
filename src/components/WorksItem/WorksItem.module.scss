@@ -15,21 +15,22 @@
 	position: relative;
 	cursor: pointer;
 	transition: all 0.5s ease-in-out;
-	//box-shadow: 0 0 4px #fff;
+	// box-shadow: 0 0 4px #fff;
 
 	&__tech{
-      	color: #AA0E0E;
+    color: #AA0E0E;
 		font-size: 12px;
 		transition: all 0.5s ease-in-out;
 	}
 
    &:hover{
 		color: rgb(255, 255, 255);
-		transform: scale(1.030);
+		transform: scale(1.010);
+		box-shadow: 0 0 7px #fff;
 		.worksItem__img{
-			transform: scale(1.1);
+			transform: scale(1.010);
 		}
-    }
+  }
 	&__title{
 		font-size: 20px;
 		color: white;

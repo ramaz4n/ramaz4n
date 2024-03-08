@@ -11,7 +11,9 @@ html{
 }
 body{
 	min-height: 100vh;
-	background: #07060e;
+	/* background: #07060e; */
+	background: #000;
+
 
 }
 body::-webkit-scrollbar {

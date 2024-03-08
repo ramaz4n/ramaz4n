@@ -10,10 +10,38 @@
 	flex-direction: column;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 50px;
+	gap: 30px;
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
 	background-color: rgba(48, 14, 14, 0);
+
+	&__titleWrap{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		font-family: 'Raleway', sans-serif;
+		color:rgb(255, 255, 255);
+		div{
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			justify-content: start;
+			@media(max-width: 500px){
+				gap: 8px;
+			}
+		}
+		@media(max-width: 500px){
+			gap: 20px;
+		}
+	}
+
+	img{
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	p{
 		margin-top: 10px;
@@ -39,13 +67,17 @@
 	}
 	&__title{
 		font-family: 'Raleway', sans-serif;
-		margin:0 auto;
 		color:rgb(255, 255, 255);
+		color:#AA0E0E;
 	}
 	&__aboutItemTitle{
 		color:#AA0E0E;
 		font-size: 22px !important;
 
+	}
+
+	&__linkItem{
+		text-decoration: underline;
 	}
 
 }
@@ -56,32 +88,26 @@
 @media(max-width: 500px){
 
 	.home{
-		padding: 50px 0 80px;
-		gap: 50px;
-		color: #fff;
-		font-family: 'Oswald', sans-serif;
-		background-color: rgba(48, 14, 14, 0);
 		p{
 			margin-top: 10px;
 			font-size: 16px;
 		}
 		&__about{
-			font-family: 'Raleway', sans-serif;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			column-gap: 20px;
-			row-gap: 50px;
 			& a{
 				color:#AA0E0E;
 				font-size: 16px;
 			}
 		}
 		&__title{
+			font-size: 18px;
+		}
+		h2{
 			font-size: 16px;
 		}
-	
+		img{
+			width: 100px;
+			height: 100px;
+		}
 	}
 
 }
@@ -90,9 +116,6 @@
 @media(max-width: 360px){
 
 	.home{
-		&__title{
-			font-size: 14px;
-		}
 		p{
 			font-size: 12px;
 		}

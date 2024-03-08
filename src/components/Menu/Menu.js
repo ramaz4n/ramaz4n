@@ -11,8 +11,7 @@ import {ReactComponent as Tel} from '../../Images/tel.svg'
 
 function Menu(props) {
 	const {pathname} = useLocation();
-	console.log(pathname);
-
+	
 	return (
 		<ul className={styles.menu}>
 			<li>
