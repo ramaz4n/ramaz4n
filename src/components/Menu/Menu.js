@@ -9,8 +9,10 @@ import {ReactComponent as Hand} from '../../Images/hand.svg'
 import {ReactComponent as Tel} from '../../Images/tel.svg'
 
 
+
 function Menu(props) {
 	const {pathname} = useLocation();
+
 	
 	return (
 		<ul className={styles.menu}>
