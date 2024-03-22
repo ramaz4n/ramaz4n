@@ -1,2 +1,2 @@
-Javascript & React developer
-personal website  https://ramazzan.vercel.app/ 
+<p>Javascript & React developer</p>
+personal website -> https://ramazzan.vercel.app/ 
