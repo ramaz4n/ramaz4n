@@ -24,12 +24,11 @@ function Home(props) {
 				<div className={styles.home__about}>
 				   <div className={styles.home__aboutItem}>
 					   	<p>
-							 	Меня зовут Рамазан и я фронтенд разработчик с опытом работы 2 года в создании креативных и 
-								отзывчивых веб-сайтов. Я увлечен созданием удобных и красивых пользовательских интерфейсов, 
-								которые обеспечивают отличный пользовательский опыт. У меня навыки в HTML, CSS, JavaScript, 
-								React и т.д. Более подробно про мои навыки можно почитать в &nbsp;
-						   <a className={styles.home__linkItem} href="https://kazan.hh.ru/resume/5002437bff07b453630039ed1f576b53333852" target="_blank">моем резюме</a>.
-							 А некоторые из моих работ представлены на странице &nbsp;
+							 I am Ramazan and i JavaScript & React developer with about 2 years of experience.  
+							 My skills: html, css, scss, javascript, react, redux, jquery, bootstrap, tailwind and so on. 
+							 You can read more about my skills in &nbsp;
+						   <a className={styles.home__linkItem} href="https://kazan.hh.ru/resume/5002437bff07b453630039ed1f576b53333852" target="_blank">my resume</a>.
+							 And some of my works are presented on the page &nbsp;
 							 <Link className={styles.home__linkItem} to="/projects">projects</Link>
 					   </p>	
 					</div>	
