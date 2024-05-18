@@ -6,29 +6,31 @@
 	cursor: pointer;
 	border-radius: 25px;
 	width: 400px;
-	transition: all 0.3s ease-in-out;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 	background-color: #000;
-	color: #ffffff;
+	color: #c6c4c4;
 	box-shadow: 0 0 7px #AA0E0E;
 	border: 1px solid #AA0E0E;
+	transition: all 0.4s ease-in-out;
+
 	&:hover{
 		transform: scale(1.05);
 	}
-}
-.img{
-	width: 25px;
-	height: 25px;
-	margin-right: 10px;
-}
 
+	span{
+		margin-bottom: 3px;
+	}
 
-@media(max-width: 500px){
-	.link{
+	img{
+		width: 25px;
+		height: 25px;
+		margin-right: 10px;
+	}
+	
+	@media(max-width: 500px){
 		padding: 7px 10px;
 		width: 250px;
 		font-size: 16px;
 	}
-
 }

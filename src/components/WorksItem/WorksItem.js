@@ -7,19 +7,20 @@ function WorksItem({ title, info, url, link, tech }) {
       <a
         href={link}
         target='_blank'
+        className={styles.worksItem}
       >
-        <div className={styles.worksItem}>
-          <img
-            className={styles.worksItem__img}
-            src={url}
-            alt='#'
-          />
-          <div className={styles.worksItem__textWrap}>
-            <h4 className={styles.worksItem__title}>{title}</h4>
-            <p className={styles.worksItem__info}>{info}</p>
-          </div>
-          <p className={styles.worksItem__tech}>{tech}</p>
+
+        <img
+          className={styles.worksItem__img}
+          src={url}
+          alt='#'
+        />
+        <div className={styles.worksItem__textWrap}>
+          <h4 className={styles.worksItem__title}>{title}</h4>
+          <p className={styles.worksItem__info}>{info}</p>
         </div>
+        <p className={styles.worksItem__tech}>{tech}</p>
+        
       </a>
     </>
   );

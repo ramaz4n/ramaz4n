@@ -4,7 +4,7 @@
 	color: white;
 	
 	&__wrapper{
-		height: 80px;
+		height: 60px;
 		width: 100%;
       display: flex;
 		justify-content: space-between;
@@ -13,7 +13,7 @@
 
 	&__logo{
 		width: 40px;
-		height: 40px;
+		height: 33px;
 	}
 	&__resume{
 		img{
@@ -28,7 +28,7 @@
 		display: flex;
 		align-items: center;
 		span{
-			color: white;
+			color: #c6c4c4;
 		   margin-top:	 4px;
 			margin-left: 5px;
 			font-size: 25px;

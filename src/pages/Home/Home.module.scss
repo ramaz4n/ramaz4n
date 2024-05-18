@@ -11,7 +11,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 30px;
-	color: #fff;
+	color: #c6c4c4;
 	font-family: 'Oswald', sans-serif;
 	background-color: rgba(48, 14, 14, 0);
 
@@ -20,7 +20,6 @@
 		align-items: center;
 		gap: 30px;
 		font-family: 'Raleway', sans-serif;
-		color:rgb(255, 255, 255);
 		div{
 			display: flex;
 			flex-direction: column;
@@ -67,19 +66,20 @@
 	}
 	&__title{
 		font-family: 'Raleway', sans-serif;
-		color:rgb(255, 255, 255);
-		color:#AA0E0E;
+		color:#c6c4c4;
 	}
 	&__aboutItemTitle{
 		color:#AA0E0E;
 		font-size: 22px !important;
-
 	}
 
 	&__linkItem{
 		text-decoration: underline;
 	}
 
+	h2{
+		color:#AA0E0E;
+	}
 }
 
 
@@ -99,7 +99,7 @@
 			}
 		}
 		&__title{
-			font-size: 18px;
+			font-size: 20px;
 		}
 		h2{
 			font-size: 16px;

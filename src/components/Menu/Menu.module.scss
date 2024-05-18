@@ -11,9 +11,9 @@
 		height: 20px;
 	}
 	&__icon * {
-		transition: all 0.2s ease-out;
-		color: #fff;
-		fill: #fff;
+		transition: all 0.4s ease-out;
+		color: #c6c4c4;
+		fill: #c6c4c4;
 	}
 	&__item{
 		display: flex;
@@ -21,15 +21,15 @@
 		column-gap: 8px;
 		font-size: 20px;
 		font-weight: bold;
-		color: white;
-		transition: all 0.2s ease-out;
+		color: #c6c4c4;
+		transition: all 0.4s ease-out;
 		text-transform: lowercase;
-		padding: 5px 15px 7px;
+		padding: 4px 20px 5px;
 		border-radius: 15px;
 	
 		&:hover{
 			color: #AA0E0E;
-			box-shadow: 0 0 7px #AA0E0E;
+			box-shadow: 0 0 5px #AA0E0E;
 			.menu__icon * {
 				color: #AA0E0E;
 				fill: #AA0E0E;
@@ -37,7 +37,7 @@
 		}
 		&:focus{
 			color: #AA0E0E;
-			box-shadow: 0 0 7px #AA0E0E;
+			box-shadow: 0 0 5px #AA0E0E;
 		}
 		
 	}

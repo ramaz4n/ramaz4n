@@ -9,7 +9,6 @@ function ContactItem({ name, link, img }) {
       target='_blank'
     >
       <img
-        className={styles.img}
         src={img}
         alt='img'
       />

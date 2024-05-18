@@ -12,29 +12,21 @@
 	align-items: center;
 	background-color: #000000;
 	border-radius: 15px;
-	position: relative;
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
-	// box-shadow: 0 0 4px #fff;
+	transition: all 0.5s ease;
+
+	&:hover{
+		transform: scale(1.020);
+	}
 
 	&__tech{
     color: #AA0E0E;
 		font-size: 12px;
-		transition: all 0.5s ease-in-out;
 	}
 
-   &:hover{
-		color: rgb(255, 255, 255);
-		transform: scale(1.010);
-		box-shadow: 0 0 7px #fff;
-		.worksItem__img{
-			transform: scale(1.010);
-		}
-  }
 	&__title{
 		font-size: 20px;
-		color: white;
-		transition: all 0.5s ease-in-out;
+		color: #c6c4c4;
 	}
 	&__info{
 		font-size: 16px;
@@ -43,7 +35,6 @@
 	&__img{
 		width: 100%;
 		height: 50%;
-		transition: all 0.5s ease-in-out;
 	}
 	&__textWrap{
 		padding: 0 10px 0;
@@ -85,7 +76,5 @@
 			margin-top: 25px;
 		}
 	}
-
-
 
 }
