@@ -43,7 +43,7 @@ function Works(props) {
       title: 'ASKIN&CO',
       info: 'Сайт для компании, работающего с техникой для зрения ',
       url: askin,
-      link: 'https://ramaz4n.github.io/askin-co/',
+      link: 'https://www.askin.ru',
       tech: 'html, css, js'
     },
     {
