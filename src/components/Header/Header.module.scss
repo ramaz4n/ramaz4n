@@ -2,6 +2,13 @@
 	font-family: 'Teko', sans-serif;
 	border-bottom: 1px solid rgb(107, 106, 106);
 	color: white;
+
+	&__title{
+		font-size: 40px;
+		color:#AA0E0E;
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
+	}
 	
 	&__wrapper{
 		height: 60px;
@@ -16,7 +23,7 @@
 		height: 33px;
 	}
 	&__resume{
-		img{
+		svg{
 			margin-bottom: -3px;
 			width: 30px;
 			height: 26px;
