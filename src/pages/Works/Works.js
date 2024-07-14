@@ -11,9 +11,19 @@ import askin from '../../Images/askin.jpg';
 import papa from '../../Images/papa.jpg';
 import hook from '../../Images/hook.png';
 import energy from '../../Images/energy.png';
+import balls from '../../Images/99ballow.jpg';
+
 
 function Works(props) {
   let worksItem = [
+    {
+      id: 10,
+      title: '99баллов',
+      info: '«99 баллов» – это онлайн-школа по подготовке к ЕГЭ и ОГЭ по русскому языку, математике и другим предметам. Пробное занятие бесплатно',
+      url: balls,
+      link: 'https://lk.99ballov.ru/',
+      tech: 'html, less, js, php, jquery, react'
+    },
     {
       id: 9,
       title: 'Energy',
@@ -24,14 +34,6 @@ function Works(props) {
     },
     {
       id: 8,
-      title: 'React-hook-form',
-      info: 'Инпуты, Формы, drag&drop и JSON',
-      url: hook,
-      link: 'https://hook-form-theta.vercel.app/',
-      tech: 'ts, react js'
-    },
-    {
-      id: 7,
       title: 'Папа Лаваш',
       info: 'Сайт для фирмы, специализирующегося по продаже фастфудов ',
       url: papa,
@@ -39,12 +41,20 @@ function Works(props) {
       tech: 'react js'
     },
     {
-      id: 6,
+      id: 7,
       title: 'ASKIN&CO',
       info: 'Сайт для компании, работающего с техникой для зрения ',
       url: askin,
       link: 'https://www.askin.ru',
       tech: 'html, css, js'
+    },
+    {
+      id: 6,
+      title: 'React-hook-form',
+      info: 'Инпуты, Формы, drag&drop и JSON',
+      url: hook,
+      link: 'https://hook-form-theta.vercel.app/',
+      tech: 'ts, react js'
     },
     {
       id: 5,
