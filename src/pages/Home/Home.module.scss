@@ -4,7 +4,7 @@
 .home{
 	max-width: 900px;
 	min-height: 400px;
-	padding: 80px 15px 100px;
+	padding: 20px 15px 100px;
 	margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
@@ -67,6 +67,8 @@
 	&__title{
 		font-family: 'Raleway', sans-serif;
 		color:#c6c4c4;
+		font-size: 30px;
+		font-weight: 600;
 	}
 	&__aboutItemTitle{
 		color:#AA0E0E;

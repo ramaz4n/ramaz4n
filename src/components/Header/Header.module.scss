@@ -1,6 +1,6 @@
 .header{
 	font-family: 'Teko', sans-serif;
-	border-bottom: 1px solid rgb(107, 106, 106);
+	margin-top: 20px;
 	color: white;
 
 	&__title{
@@ -22,30 +22,42 @@
 		width: 40px;
 		height: 33px;
 	}
-	&__resume{
-		svg{
-			margin-bottom: -3px;
-			width: 30px;
-			height: 26px;
-		}
-		color:#AA0E0E;
-		font-size: 27px;
-	}
-	&__git{
+
+	&__links {
 		display: flex;
-		align-items: center;
-		span{
-			color: #c6c4c4;
-		   margin-top:	 4px;
-			margin-left: 5px;
-			font-size: 25px;
+		align-content: center;
+		gap: 15px;
+	}
+
+	&__link {
+		svg {
+			width: 30px;
+			height: 30px;
 		}
-		img{
-			width: 35px;
-			height: 35px;
+		path{
+			transition: all 0.3s ease;
+		}
+		&:hover {
+			path {
+				fill: #AA0E0E;
+			}
 		}
 	}
 
+	&__burger {
+		cursor: pointer;
+		display: none;
+		width: 30px;
+		height: 30px;
+		
+		path {
+			fill: #fff;
+		}
+
+		@media(max-width: 840px) {
+			display: block;
+		}
+	}
 }
 
 

@@ -2,31 +2,31 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-import styles from './Menu.module.scss';
+import styles from './MobileMenu.module.scss';
 
 import { ReactComponent as HomeImg } from '../../Images/home.svg';
 import { ReactComponent as Hand } from '../../Images/hand.svg';
 import { ReactComponent as Tel } from '../../Images/tel.svg';
 
-function Menu(props) {
+function MobileMenu({isActive}) {
   const { pathname } = useLocation();
 
   return (
-    <ul className={styles.menu}>
+    <ul className={isActive? styles.mobileMenu + " " + styles.mobileMenuActive :styles.mobileMenu}>
       <li>
         <Link
           className={
             pathname == '/'
-              ? styles.menu__item + ' ' + styles.active
-              : styles.menu__item
+              ? styles.mobileMenu__item + ' ' + styles.active
+              : styles.mobileMenu__item
           }
           to='/'
         >
           <HomeImg
             className={
               pathname == '/'
-                ? styles.menu__icon + ' ' + styles.activeIcon
-                : styles.menu__icon
+                ? styles.mobileMenu__icon + ' ' + styles.activeIcon
+                : styles.mobileMenu__icon
             }
           />
           About
@@ -36,16 +36,16 @@ function Menu(props) {
         <Link
           className={
             pathname == '/projects'
-              ? styles.menu__item + ' ' + styles.active
-              : styles.menu__item
+              ? styles.mobileMenu__item + ' ' + styles.active
+              : styles.mobileMenu__item
           }
           to='/projects'
         >
           <Hand
             className={
               pathname == '/projects'
-                ? styles.menu__icon + ' ' + styles.activeIcon
-                : styles.menu__icon
+                ? styles.mobileMenu__icon + ' ' + styles.activeIcon
+                : styles.mobileMenu__icon
             }
           />
           Projects
@@ -55,16 +55,16 @@ function Menu(props) {
         <Link
           className={
             pathname == '/contact'
-              ? styles.menu__item + ' ' + styles.active
-              : styles.menu__item
+              ? styles.mobileMenu__item + ' ' + styles.active
+              : styles.mobileMenu__item
           }
           to='/contact'
         >
           <Tel
             className={
               pathname == '/contact'
-                ? styles.menu__icon + ' ' + styles.activeIcon
-                : styles.menu__icon
+                ? styles.mobileMenu__icon + ' ' + styles.activeIcon
+                : styles.mobileMenu__icon
             }
           />
           Contacts
@@ -74,4 +74,4 @@ function Menu(props) {
   );
 }
 
-export default Menu;
+export default MobileMenu;

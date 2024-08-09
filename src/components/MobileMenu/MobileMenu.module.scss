@@ -1,12 +1,22 @@
 
-.menu{
-	display: flex;
+.mobileMenu {
+	display: none;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
 	padding: 25px 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	background-color: #000;
 
-	&__icon{
+	transform: translateY(-100px);
+	transition: transform 0.3s cubic-bezier(0.3);
+
+	&__icon {
 		width: 20px;
 		height: 20px;
 	}
@@ -15,7 +25,7 @@
 		color: #c6c4c4;
 		fill: #c6c4c4;
 	}
-	&__item{
+	&__item {
 		display: flex;
 		align-items: center;
 		column-gap: 8px;
@@ -42,19 +52,19 @@
 		}
 		
 	}
+}
 
-	@media(max-width: 840px) {
-		display: none;
-	}
-	
+.mobileMenuActive {
+	transform: translateY(0);
+	transition: transform 0.3s cubic-bezier(0.3);
 }
 
 
-.active{
+.active {
 	box-shadow: 0 0 7px rgb(170, 14, 14);
 	color: rgb(170, 14, 14);
 }
-.activeIcon *{
+.activeIcon * {
 	transition: all 0.2s ease-out;
 	color: rgb(170, 14, 14);
 	fill: rgb(170, 14, 14);
