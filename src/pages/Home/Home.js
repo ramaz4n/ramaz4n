@@ -17,15 +17,16 @@ function Home(props) {
 
           <div>
             <h1 className={styles.home__title}>Ramazan Abdullaev</h1>
-            <h2 className={styles.home__subTitle}>
+            <h2 className='text-[19px]'>
               JavaScript & React js developer
             </h2>
+            <p className='text-[14px] ml-1 font-bold' >Founder of Bery</p>
           </div>
         </div>
 
         <div className={styles.home__about}>
           <div className={styles.home__aboutItem}>
-            <p>
+            <p className='text-[20px] mt-[10px] leading-[30px]'>
               I am Ramazan and i JavaScript & React developer with about 2 years
               of experience. My skills: html, css, scss, javascript, react,
               redux, jquery, bootstrap, tailwind and so on. You can read more

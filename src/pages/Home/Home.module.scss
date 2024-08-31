@@ -23,11 +23,17 @@
 		div{
 			display: flex;
 			flex-direction: column;
-			gap: 15px;
+			gap: 5px;
 			justify-content: start;
+			@media(max-width: 600px){
+				align-items: center;
+			}
 			@media(max-width: 500px){
 				gap: 8px;
 			}
+		}
+		@media(max-width: 600px){
+			flex-direction: column;
 		}
 		@media(max-width: 500px){
 			gap: 20px;
@@ -42,11 +48,6 @@
 		background-size: cover;
 	}
 
-	p{
-		margin-top: 10px;
-		font-size: 20px;
-		line-height: 30px;
-	}
 	&__about{
 		font-family: 'Raleway', sans-serif;
 		width: 100%;
@@ -67,12 +68,13 @@
 	&__title{
 		font-family: 'Raleway', sans-serif;
 		color:#c6c4c4;
-		font-size: 30px;
+		font-size: 35px;
+		line-height: normal;
 		font-weight: 600;
+		text-shadow: 5px 10px 15px rgba(170, 14, 14, 1)
 	}
-	&__aboutItemTitle{
-		color:#AA0E0E;
-		font-size: 22px !important;
+	&__aboutItem{
+		text-shadow: 5px 10px 15px rgba(170, 14, 14, 1)
 	}
 
 	&__linkItem{

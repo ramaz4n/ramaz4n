@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState , useContext} from 'react';
 import { Link } from 'react-router-dom';
 import useSound from 'use-sound';
+import {Context} from '../../Context'
 
 import Container from '../Container/Container';
 
@@ -13,7 +14,7 @@ import MobileMenu from './../MobileMenu/MobileMenu';
 
 function Header(props) {
   const [play] = useSound(clickAudio);
-  const [mobileMenuActive, setMobileMenuActive] = useState(false);
+  const {setIsMobile} = useContext(Context);
 
   return (
     <div className={styles.header}>
@@ -24,7 +25,7 @@ function Header(props) {
             to='/'
           >
             <h3 className={styles.header__title}>
-              Abdev
+              Bery
             </h3>
           </Link>
 
@@ -62,7 +63,7 @@ function Header(props) {
             </a>
           </div>
 
-          <svg onClick={()=> setMobileMenuActive(true)} className={styles.header__burger} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" >
+          <svg onClick={()=>setIsMobile(true)} className={styles.header__burger} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" >
             <g>
               <path d="M480,224H32c-17.673,0-32,14.327-32,32s14.327,32,32,32h448c17.673,0,32-14.327,32-32S497.673,224,480,224z"/>
               <path d="M32,138.667h448c17.673,0,32-14.327,32-32s-14.327-32-32-32H32c-17.673,0-32,14.327-32,32S14.327,138.667,32,138.667z"/>
@@ -72,7 +73,7 @@ function Header(props) {
         </div>
       </Container>
 
-      <MobileMenu isActive={mobileMenuActive}/>
+      <MobileMenu />
     </div>
   );
 }
