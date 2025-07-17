@@ -1,2 +1,2 @@
-<h1>JavaScript TypeScript React Next developer</p>
+<h1>Software engineer</p>
   
